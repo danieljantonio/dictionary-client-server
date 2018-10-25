@@ -1,4 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/home/jedidiah/projects/dictionary-client-server/src/main/scala/app.scala:31:58: value toLowerString is not a member of String[0m
-[0m[[0m[31merror[0m] [0m[0m    println(s"The word '${word}' means ${dictionary(word.toLowerString)}")[0m
-[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
