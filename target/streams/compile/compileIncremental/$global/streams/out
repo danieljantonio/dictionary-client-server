@@ -1,36 +1,36 @@
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set(/home/jedidiah/projects/dictionary-client-server/src/main/scala/server.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/jedidiah/projects/dictionary-client-server/src/main/scala/Client.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(client)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/jedidiah/projects/dictionary-client-server/src/main/scala/server.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(client)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/jedidiah/projects/dictionary-client-server/src/main/scala/Client.scala)[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /home/jedidiah/projects/dictionary-client-server/target/scala-2.11/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.11:1.2.4:compile for Scala 2.11.12[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.11:1.2.4:compile for Scala 2.11.12[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 4f93a934 for Scala compiler version 2.11.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 7107a99e for Scala compiler version 2.11.12[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/home/jedidiah/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/home/jedidiah/projects/dictionary-client-server/target/scala-2.11/classes[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 8.235961274 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 4.185112672 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from server...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(server)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(server)[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(server,ModifiedNames(changes = UsedName(synchronized,[Default]), UsedName($init$,[Default]), UsedName(##,[Default]), UsedName(delayedInit,[Default]), UsedName(getClass,[Default]), UsedName(!=,[Default]), UsedName(isInstanceOf,[Default]), UsedName(executionStart,[Default]), UsedName(hashCode,[Default]), UsedName(toString,[Default]), UsedName(server,[Default]), UsedName(ne,[Default]), UsedName(args,[Default]), UsedName(equals,[Default]), UsedName($asInstanceOf,[Default]), UsedName(notifyAll,[Default]), UsedName(notify,[Default]), UsedName(clone,[Default]), UsedName($isInstanceOf,[Default]), UsedName(finalize,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(main,[Default]), UsedName(client,[Default]), UsedName(eq,[Default]), UsedName(asInstanceOf,[Default]))) invalidates 1 classes due to The server has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(synchronized,[Default]), UsedName($init$,[Default]), UsedName(##,[Default]), UsedName(delayedInit,[Default]), UsedName(getClass,[Default]), UsedName(!=,[Default]), UsedName(isInstanceOf,[Default]), UsedName(executionStart,[Default]), UsedName(hashCode,[Default]), UsedName(toString,[Default]), UsedName(server,[Default]), UsedName(ne,[Default]), UsedName(args,[Default]), UsedName(equals,[Default]), UsedName($asInstanceOf,[Default]), UsedName(notifyAll,[Default]), UsedName(notify,[Default]), UsedName(clone,[Default]), UsedName($isInstanceOf,[Default]), UsedName(finalize,[Default]), UsedName(wait,[Default]), UsedName(==,[Default]), UsedName(main,[Default]), UsedName(client,[Default]), UsedName(eq,[Default]), UsedName(asInstanceOf,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(server)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from client...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(client)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(client)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(client,ModifiedNames(changes = UsedName(input,[Default]))) invalidates 1 classes due to The client has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(input,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(client)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	> [0m
 [0m[[0m[0mdebug[0m] [0m[0m	> [0m
 [0m[[0m[0mdebug[0m] [0m[0m        [0m
