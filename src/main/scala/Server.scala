@@ -49,12 +49,10 @@ object server extends App {
   def searchMeaning(word: String): String = {
     println(s"[info] Searching for the word ${word}")
     //add if statement to check if the word is in the hashmap
-    if (word != "exit"){
-      if(dictionary.contains(word)){
-        return (s"The word '${word}' means ${dictionary(word.toLowerCase)}")
-      } else {
-        return (s"The word '${word}' is not found in the dictionary")
-      }
+    if(dictionary.contains(word)){
+      return (s"The word '${word}' means ${dictionary(word.toLowerCase)}")
+    } else {
+      return (s"The word '${word}' is not found in the dictionary")
     }
   }
 }
