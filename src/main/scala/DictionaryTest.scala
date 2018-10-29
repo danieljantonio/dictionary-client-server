@@ -7,7 +7,7 @@ import scala.io.Source
 import scala.collection.mutable.HashMap
 import scala.io.StdIn.readLine
 
-object app{
+class dict{
   var dictionary: HashMap[String, String] = HashMap[String, String]()
 
   def main(args: Array[String]): Unit = {

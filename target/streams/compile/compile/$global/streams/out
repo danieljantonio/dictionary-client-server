@@ -1,2 +1,16 @@
-[0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning; re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jedidiah/projects/dictionary-client-server/src/main/scala/App.scala:9:9: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Char('1')[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m			case '1' => runServer()[0m
+[0m[[0m[31merror[0m] [0m[0m			     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jedidiah/projects/dictionary-client-server/src/main/scala/App.scala:10:9: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Char('2')[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m			case '2' => runClient()[0m
+[0m[[0m[31merror[0m] [0m[0m			     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jedidiah/projects/dictionary-client-server/src/main/scala/App.scala:11:9: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Char('3')[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m			case '3' => [0m
+[0m[[0m[31merror[0m] [0m[0m			     ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
