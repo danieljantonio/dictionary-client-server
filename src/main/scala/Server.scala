@@ -1,5 +1,5 @@
 import java.io.{DataInputStream, DataOutputStream}
-import java.net.ServerSocket
+import java.net.{ServerSocket, InetAddress}
 
 import scala.io.Source
 import scala.collection.mutable.HashMap
@@ -7,20 +7,27 @@ import scala.collection.mutable.HashMap
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
+import scala.io.StdIn.readLine
+
 class Server {
-  val server = new ServerSocket(9000)
+  val port: Int = readLine("Enter port: ").toInt
+  val server = new ServerSocket(port)
   var dictionary: HashMap[String, String] = HashMap[String, String]()
+  val hostname: String = InetAddress.getLocalHost.getHostName
 
   def run(): Unit = {
     dictionaryInit()
     while(true) {
       val socket = server.accept()
+      val clientInfo: String = (s"[info] Client ${socket.getInetAddress.getHostName}")
+      println(s"${clientInfo} connected")
       Future {
         val client = socket
         try {
           val is = new DataInputStream(client.getInputStream())
           val os = new DataOutputStream(client.getOutputStream())
           var line: String = is.readLine()
+          println(s"${clientInfo} searched the word ${line}")
           os.writeBytes(searchMeaning(line) + "\n")
         } catch {
           case e: Exception => e.printStackTrace
@@ -39,6 +46,7 @@ class Server {
       dictionary.update(word, definition.mkString)
     }
     println("[info] Dictionary initialized")
+    println(s"Server at Hostname: ${hostname}\tPort: ${port}")
   }
 
   def searchMeaning(word: String): String = {
