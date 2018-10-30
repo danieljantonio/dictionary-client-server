@@ -8,25 +8,28 @@ class Client {
   def run(): Unit = {
     val hostname: String = readLine("Enter a hostname: ")
     val port: Int = readLine("Enter port number: ").toInt
+    
     println("[info] Enter 'exit' to exit the app")
     while(input != "exit") {
-      if (input == "exit"){
-
-      } else {
-        try {
-          client = Some(new Socket(hostname, port))
-          val is = new DataInputStream(client.get.getInputStream)
-          val os = new DataOutputStream(client.get.getOutputStream)
-          input = readLine("Enter a word: ")
+      try {
+        client = Some(new Socket(hostname, port))
+        val is = new DataInputStream(client.get.getInputStream)
+        val os = new DataOutputStream(client.get.getOutputStream)
+        input = readLine("Enter a word: ")
+        if (input != "exit"){
           os.writeBytes(input + "\n")
           var line: String = is.readLine()
           println(line)
-        } catch {
-          case e: Exception => e.printStackTrace()
-        } finally {
-          client foreach (_.close())
         }
+      } catch {
+        case e: Exception => e.printStackTrace()
+      } finally {
+        client foreach (_.close())
       }
+      // if (input == "exit"){
+
+      // } else {
+      // }
     }
   }
 }

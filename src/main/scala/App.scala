@@ -4,12 +4,20 @@ import scala.io.StdIn.readLine
 object App{
 	def main(args: Array[String]): Unit = {
 		var input: String = "0"
-		input = readLine("1: Server\n2: Client\n3: Exit\nEnter your selection: ")
-		input match {
-			case "1" => runServer()
-			case "2" => runClient()
-			case "3" => 
-			case _ => println("ERR404: Invalid input identified")
+		var valid: Boolean = false
+		while(!valid)
+		try {
+			input = readLine("1: Server\n2: Client\n3: Exit\nEnter your selection: ")
+			input match {
+				case "1" => runServer()
+							valid = true
+				case "2" => runClient()
+							valid = true
+				case "3" => valid = true
+				case _ => println("ERR404: Invalid input identified")
+			}
+		} catch {
+			case e: Throwable => println()
 		}
 	}
 

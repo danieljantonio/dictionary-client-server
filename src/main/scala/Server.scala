@@ -27,12 +27,15 @@ class Server {
           val is = new DataInputStream(client.getInputStream())
           val os = new DataOutputStream(client.getOutputStream())
           var line: String = is.readLine()
-          println(s"${clientInfo} searched the word ${line}")
-          os.writeBytes(searchMeaning(line) + "\n")
+          if(line!="exit") {
+            println(s"${clientInfo} searched the word ${line}")
+            os.writeBytes(searchMeaning(line) + "\n")
+          }
         } catch {
-          case e: Exception => e.printStackTrace
+          case e: Exception => println()
         } finally {
           client.close()
+          println(s"${clientInfo} disconnected")
         }
       }
     }
@@ -50,7 +53,6 @@ class Server {
   }
 
   def searchMeaning(word: String): String = {
-    println(s"[info] Searching for the word ${word}")
     if(dictionary.contains(word)){
       return (s"The word '${word}' means ${dictionary(word.toLowerCase)}")
     } else {
